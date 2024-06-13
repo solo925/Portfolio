@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  Contact Page
+{% endblock %}
+{% block extrahead %}
+  <link rel="stylesheet" href="{% static 'css/contact.css' %}" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+{% endblock %}
+
+{% block content %}
+  <div class="container mt-4">
+    <h1>Contact Information</h1>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Contact Details</h5>
+        <p class="card-text"><strong>Phone:</strong> +254702970055</p>
+        <p class="card-text">
+          <strong>Email:</strong> 
+          <a href="mailto:solomononyango925@gmail.com">solomononyango925@gmail.com</a><br>
+          <a href="mailto:solomon.onyango20@students.dkut.ac.ke">solomon.onyango20@students.dkut.ac.ke</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (Optional if you want Bootstrap JS functionalities) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+{% endblock %}
